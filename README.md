@@ -9,8 +9,11 @@ but we do in 3-4 commit
 
 
 1st commit without any change
+  this commit work
+ 
+2st commit we change  ir js to scripts and update path of js
 
-2st commit we change 
+
 3st commit we change 
 4st commit we change 
 5st commit we change 
