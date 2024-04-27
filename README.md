@@ -15,8 +15,19 @@ but we do in 3-4 commit
   -this commit work 
 
 3st commit we change  in "script" path using absolute path scr="./scripts/slide.js" to src="/scripts/slide.js"
+  -not work bcz "https://bhavesh-kumar98.github.io/newmntra/
+  my link 
+  
+  but when use relative path then its work as ./script/...
+  https://bhavesh-kumar98.github.io/newmntra/scripts/.....
 
+  but when use absolute path then its NOT work(bcz of root dir) as 
+  /script/...
+  https://bhavesh-kumar98.github.io/scripts/.....
 
-4st commit we change 
+4st commit we change now add in head<base href="https://bhavesh-kumar98.github.io/newmntra/">
+
+and remove slash from src =/scrpt to src ="scripts/...
+
 5st commit we change 
 6st commit we change 
