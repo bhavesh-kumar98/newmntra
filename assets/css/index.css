@@ -1,0 +1,336 @@
+/* reset css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 200 to 800 */
+
+/* .assistant-<uniquifier> {
+  font-family: "Assistant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  font-weight: 400;
+  color: rgb(40, 44, 63);
+  font-weight: 700;
+  /* background-color: aquamarine; */
+  width: 100vw;
+  /* overflow-y: clip; */
+  padding-top: 80px;
+}
+
+/*----------header section */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+/* all logo url */
+.web-sprite {
+  background: url(../images/MyntraWebSprite.png);
+  background-size: 1404px 105px;
+}
+
+/* header */
+.headerSection {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+/* logo */
+.logoContainer {
+  margin-left: 4%;
+  /*  */
+  margin-right: 2%;
+}
+
+.iconLogo {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.sprites-iconLogo-position {
+  width: 53px;
+  height: 36px;
+  background-position: -462px 0px;
+}
+
+/* navbar */
+nav {
+  margin-right: 10%;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navContent {
+}
+
+.navLink {
+}
+
+.navAncer {
+  padding: 0px 17px 27px;
+  text-decoration: none;
+  color: inherit;
+}
+/* .dropBox {
+  position: absolute;
+  display: none;
+}
+.navLink:hover .dropBox {
+  position: absolute;
+  display: block;
+} */
+
+/*  */
+
+/* search */
+
+.quer {
+  display: flex;
+  width: 28%;
+  margin-right: 6%;
+}
+
+.searchBtn {
+  border: 1px solid #f5f5f6;
+  background-color: #f5f5f6;
+  width: 45px;
+  border-radius: 4px 0 0 4px;
+  border-right: 0;
+}
+
+.searchBar {
+  border: 1px solid #f5f5f6;
+  background-color: #f5f5f6;
+  padding: 10px 10px 10px 15px;
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+  width: -webkit-fill-available;
+}
+
+.quer:focus-within .searchBar,
+.quer:focus-within .searchBtn {
+  outline: none;
+  background-color: #ffffff;
+}
+
+.iconSearch {
+  display: inline-block;
+  transform: scale(0.7);
+}
+
+.sprites-iconSearch-position {
+  width: 21px;
+  height: 21px;
+  background-position: 650px 1px;
+}
+
+/* user actions */
+
+.action {
+  /* background-color: palegoldenrod; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.actionItem {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* profile */
+
+.user {
+  position: relative;
+  height: 33px;
+}
+
+.userIconCont {
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconUser {
+  display: inline-block;
+}
+
+.sprites-iconUser-position {
+  width: 20px;
+  height: 18px;
+  background-position: 1104px -58px;
+}
+
+.userTitle {
+}
+
+/* .userActions{
+
+} */
+
+/* Wishlist */
+
+.Wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconWishlist {
+  display: inline-block;
+}
+
+.sprites-iconWishlist-position {
+  width: 19px;
+  height: 17px;
+  background-position: 1090px -84px;
+}
+
+/* Bag */
+
+.bag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.iconBag {
+  display: inline-block;
+}
+
+.sprites-iconBag-position {
+  width: 18px;
+  height: 18px;
+  background-position: 1061px -58px;
+}
+
+.bagCount {
+  background-color: #ff4767;
+  color: white;
+  border-radius: 50%;
+  height: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 18px;
+  padding: 0 6px;
+  position: absolute;
+  top: -10px;
+  right: -9px;
+}
+
+/*---------main */
+
+/*----------Slide Section */
+
+.slideCont {
+}
+
+.slideShow-cont {
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.slideTra {
+  animation: trans 2s linear;
+}
+
+@keyframes trans {
+  0% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.slides > img {
+  width: 100%;
+  background-color: green;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 1000;
+  position: absolute;
+  top: 40%;
+  padding: 10px 10px 10px 5px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #7e818c41;
+}
+
+.prev {
+  left: 20px;
+}
+.next {
+  right: 20px;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    /* font-size: 11px */
+  }
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  user-select: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #dedfe1;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* active class for we add in logic to active slide dot highlight */
+.active,
+.dot:hover {
+  background-color: #7e818c;
+}
