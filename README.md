@@ -1,6 +1,4 @@
-this is project of my clone of https://github.com/bhavesh-kumar98/trymn.git
-main project " trymn " working good.
-but in this ve change something 
+in this ve change something 
 like: 
 dir js to "scripts"
 in index.html we change path  "./xyz" to "/abx/xyz/" of js and image 
