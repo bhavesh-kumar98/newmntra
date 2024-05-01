@@ -29,5 +29,6 @@ but we do in 3-4 commit
 
 and remove slash from src =/scrpt to src ="scripts/...
 
-5st commit we change 
-6st commit we change 
+we use relative path "./xyz/xyz" or "xyz/xyz"
+
+**NOTE:** this repo only for learing the src path that create issue in deployment.
